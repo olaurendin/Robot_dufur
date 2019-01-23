@@ -195,7 +195,7 @@
       <child link="camera_link"/>
    </joint>
 
-   <!-- Camera -->
+   <!-- Camera chassis -->
    <link name="camera_link">
       <collision>
          <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -218,9 +218,9 @@
    </link>
    <xacro:property name="camera_link" value="0.4" /> <!-- Size of square 'camera' box -->
 
-   <!-- Plugin Camera -->
+   <!-- Plugin Camera chassis -->
    <gazebo reference="camera_link">
-      <sensor type="camera" name="camera1">
+      <sensor type="camera" name="camera_chassis">
          <update_rate>30.0</update_rate>
          <camera name="head">
             <horizontal_fov>1.3962634</horizontal_fov>
@@ -245,7 +245,7 @@
          <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
             <alwaysOn>true</alwaysOn>
             <updateRate>0.0</updateRate>
-            <cameraName>rrbot/camera1</cameraName>
+            <cameraName>rrbot/camera_chassis</cameraName>
             <imageTopicName>image_raw</imageTopicName>
             <cameraInfoTopicName>camera_info</cameraInfoTopicName>
             <frameName>camera_link</frameName>
