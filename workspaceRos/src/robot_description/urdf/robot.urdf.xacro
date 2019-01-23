@@ -396,7 +396,7 @@
    
 
 
-   <!-- Joint Chassis-GPS-->
+   <!-- Joint Chassis-GPS
    <joint name="gps_joint" type="fixed">
       <axis xyz="0 0 0" />
       <origin xyz="-0.15 0 0.17" rpy="0 0 0"/>
@@ -404,7 +404,7 @@
       <child link="gps_link"/>
    </joint>
 
-   <!-- GPS -->
+   
    <link name="gps_link">
       <collision>
          <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -425,7 +425,7 @@
       </inertial>
    </link>
 
-   <!-- Plugin GPS -->
+   
    <gazebo>
       <plugin name="novatel_gps_sim" filename="libhector_gazebo_ros_gps.so">
          <alwaysOn>true</alwaysOn>
@@ -439,7 +439,7 @@
 	 <velocityDrift>0 0 0</velocityDrift>
          <velocityGaussianNoise>0.1 0.1 0.1</velocityGaussianNoise>
       </plugin>
-   </gazebo>
+   </gazebo>-->
 
 
 
