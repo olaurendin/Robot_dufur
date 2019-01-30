@@ -36,3 +36,8 @@ pour controller robot : (ds  workspaceRos
 	ds 2ème : rostopic pub /cmd_vel + tab x fois
 			mettre des valeurs
 		OU rqt et bouger axes (anticlock avant, clock , arriere)
+
+
+PACKAGES A INSTALLER :
+sudo apt install ros-melodic-hardware-interface ros-melodic-effort-controllers ros-melodic-joint-state-controller
+
