@@ -2,13 +2,15 @@
 
 <launch>
 
-	<arg name="gui" value="true"/>
 
-	<!--include package move-base-->
-	<!--<include file="$(find ensta_move_base)/launch/move_base.launch"/>-->
-	<!-- SLAM -->
-	    <!--<include file="$(find gmapping)/launch/slam_gmapping_pr2.launch">-->
-	    <!--</include>-->
+	<arg name="gui" default = "true"/>
+
+
+	<!--include package move-base>
+	<include file="$(find ensta_move_base)/launch/move_base.launch"/>
+	< SLAM -->
+	    <include file="$(find gmapping)/launch/slam_gmapping_pr2.launch">
+	    </include>
 
 	  <!-- Initialization world -->
 	  <include file="$(find gazebo_ros)/launch/empty_world.launch">
